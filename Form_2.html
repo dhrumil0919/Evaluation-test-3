@@ -1,0 +1,296 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Form_2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="Form_2.js"></script>
+    <title>Form_2</title>
+</head>
+
+<body>
+    <section>
+        <form id="form" action="next.html">
+            <div class="body">
+                <div class="container">
+                    <div class="fn">
+                        <label for="fname"><b>
+                                <h3>Full Name:</h3>
+                            </b></label><br>
+                    </div>
+                    <div class="name_p">
+                        <div class="name_c1">
+                            <textarea id="fname" name="fname" rows="2" cols="30" placeholder="First Name"></textarea>
+
+                        </div>
+                        <div class="name_c2">
+                            <textarea id="lname" name="lname" rows="2" cols="30" placeholder="Last Name"></textarea>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email"><b>
+                                <h3>Email</h3>
+                            </b></lable>
+                    </div>
+                    <div class="email">
+                        <textarea id="email" name="email" rows="2" cols="30"
+                            placeholder="example@example.com"></textarea><br>
+                    </div>
+                    <div class="age">
+                        <label for="age"><b>
+                                <h3>Age</h3>
+                            </b></lable>
+                    </div>
+                    <div class="email">
+                        <textarea id="age" name="age" rows="2" cols="30"></textarea><br>
+                    </div>
+                    <div class="sec1">
+                        <div class="nxt">
+                            <input type="checkbox" id="nxt" name="checktry" value="yes">
+                            <b><label for="Yes" class="nxt">NEXT-DAY CONFIGURATUION</b></label><br>
+                            <b><label for="description" class="set">Set Next Day pick up Time</b></label>
+                            <div class="sunday">
+                                <input type="checkbox" id="day_1" name="checktry" value="sunday" class="cbox"
+                                    disabled="disabled">
+                                <b><label for="Yes" class="nxt">Sunday</b></label><br>
+                            </div>
+                            <div class="monday">
+                                <input type="checkbox" id="day_2" name="checktry" value="monday" class="cbox"
+                                    disabled="disabled">
+                                <b><label for="Yes" class="nxt">Monday</b></label><br>
+
+                            </div>
+                            <div class="tuesday">
+                                <input type="checkbox" id="day_3" name="checktry" value="tuesday" class="cbox"
+                                    disabled="disabled">
+                                <b><label for="Yes" class="nxt">Tuesday</b></label><br>
+
+                            </div>
+                            <div class="wednesday">
+                                <input type="checkbox" id="day_4" name="checktry" value="wednesday" class="cbox"
+                                    disabled="disabled">
+                                <b><label for="Yes" class="nxt">Wednesday</b></label><br>
+
+                            </div>
+                            <div class="thursday">
+                                <input type="checkbox" id="day_5" name="checktry" value="thursday" class="cbox"
+                                    disabled="disabled">
+                                <b><label for="Yes" class="nxt">Thursday</b></label><br>
+
+                            </div>
+                            <div class="friday">
+                                <input type="checkbox" id="day_6" name="checktry" value="friday" class="cbox"
+                                    disabled="disabled">
+                                <b><label for="Yes" class="nxt">Friday</b></label><br>
+
+                            </div>
+                            <div class="saturday">
+                                <input type="checkbox" id="day_7" name="checktry" value="saturday" class="cbox"
+                                    disabled="disabled">
+                                <b><label for="Yes" class="nxt">Saturday</b></label><br>
+
+                            </div>
+                        </div>
+                        <select name="dropdwon" id="dd1" class="day" disabled="disabled">
+                            <option value="-Select Pick-up Time-">-Select Pick-up Time-</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="24:00">24:00</option>
+                        </select><br>
+                        <select name="dropdwon" id="dd2" class="day" disabled="disabled">
+                            <option value="-Select Pick-up Time-">-Select Pick-up Time-</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="24:00">24:00</option>
+                        </select><br>
+                        <select name="dropdwon" id="dd3" class="day" disabled="disabled">
+                            <option value="-Select Pick-up Time-">-Select Pick-up Time-</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="24:00">24:00</option>
+                        </select><br>
+                        <select name="dropdwon" id="dd4" class="day" disabled="disabled">
+                            <option value="-Select Pick-up Time-">-Select Pick-up Time-</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="24:00">24:00</option>
+                        </select><br>
+                        <select name="dropdwon" id="dd5" class="day" disabled="disabled">
+                            <option value="-Select Pick-up Time-">-Select Pick-up Time-</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="24:00">24:00</option>
+                        </select><br>
+                        <select name="dropdwon" id="dd6" class="day" disabled="disabled">
+                            <option value="-Select Pick-up Time-">-Select Pick-up Time-</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="24:00">24:00</option>
+                        </select><br>
+                        <select name="dropdwon" id="dd7" class="day" disabled="disabled">
+                            <option value="-Select Pick-up Time-">-Select Pick-up Time-</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="24:00">24:00</option>
+                        </select><br>
+                        <button class="button" type="submit" id="submit" onclick="passvalue();">Salva modifiche</button>
+                    </div>
+                </div>
+                <script src="Form_2.js"></script>
+        </form>
+        <p id="p1"></p>
+    </section>
+</body>
+
+</html>
